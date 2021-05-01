@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Footer-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ce1c9ef40b.js" crossorigin="anonymous"></script>
+  <title>Welcome to Green-Stop</title>
+
+  <style>
+    nav{
+      background-color: #00af91;
+  background-image: linear-gradient(315deg, #00af91 0%, #233329 74%);
+  
+    }
+    .one-edge-shadow {
+              box-shadow: 0 8px 2px -5px rgb(3, 3, 3);
+}
+.display-8{
+  font-weight: 200;
+  font-size: 30px;
+}
+
+li:hover{
+    background: black;
+    transition: .5s;
+    border-radius: 10px;
+}
+.we{
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    color: white;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+  <nav class="one-edge-shadow 
+  sticky-top navbar 
+  navbar-expand-lg
+   navbar-dark bg-black ">
+   
+    <img src="static/web/img/footer.png" alt="" style=" max-width:50px;height: 50px;;margin-right:0 ;">
+
+    <a class="navbar-brand" href="/" style="font-weight: bold;margin-left: 0;">GREEN STOP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="/carbon"><img src="static/web/img/footprint.png" alt="" style=" max-width:50px;height: 50px;;margin-right:0 ;"></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/store">Store <span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+
+
+      <ul class=" navbar-nav my-2 my-lg-0">
+
+        <li class="nav-item ">
+        <form action="/search" >   
+          <input type="text" class="btn btn-outline-info" placeholder=" search" name="q">   
+          <button class="btn btn-outline-info" type="submit">Submit</button>   
+          </form>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link we" href="/homepage">About<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link we" href="/blog">Blog<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link we" href="/cart">Cart 
+            <span class="badge badge-info">{{request.session.cart.keys|length}}</span>
+            <span class="sr-only">(current)</span></a>
+        </li>
+
+        
+        
+        {% if request.session.customer %}
+        
+        <li class="nav-item ">
+          <a class="nav-link we" href="/orders">Orders<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
+        </li>
+        {% else %}
+       
+        <li class="nav-item ">
+          <a class="nav-link we" href="/signup">Signup<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link we" href="/login">Login<span class="sr-only">(current)</span></a>
+        </li>
+        {% endif %}
+
+
+
+      </ul>
+
+
+    </div>
+  </nav>
+
+
+    {% block content %}{% endblock %}
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

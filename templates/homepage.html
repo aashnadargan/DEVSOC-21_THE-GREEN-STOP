@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% block content %}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home page</title>
+    <meta charset="utf-8">
+    <!-- <title>Responsive Navbar | CodingNepal</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/homepagec.css'%}">
+  </head>
+  <body>
+    <div class="hero-image">
+      <img src="{%static 'web/img/hero1.png'%}">
+        <div class="hero-text">
+            <br><br><br><br><br>
+            <h1 style="margin-left: 8%; font-weight: bold; font-family: fantasy; color: #173002;">
+                
+            THE GREEN STOP</h1>
+            <h2 style="margin-left: 8%; font-weight: bold;"> Change To Create and Preserve </h2>
+            <h2 style="margin-left: 8%; font-weight: bold;">Sustainable Technology That<br> Protects The Environment And <br>  Provide Green Products</h2>
+            <br>
+            <br>
+
+        </div>
+<hr>
+    </div>
+    <div class="wpb_text_column wpb_content_element   featured-for-you">
+        <div class="wpb_wrapper">
+        <h1 class="happy-planet-text" style="font-size: 50px; font-weight: bold; text-align: center;padding-top: 1%; padding-bottom: 1%;"><a style="color: #00af91;" href="">About Us</a></h1>
+        </div>
+        </div>
+
+        <!--About us html-->
+        <section id="cta">
+            <img src="{%static 'web/img/aboutus.png'%}" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+            <h3 class="end">Change to create and preserve, sustainable technology!! </h3>
+            <h5>It helps you to keep a check on how many environmental friendly products you use in 
+                your daily routine and gives you points for the same.'GREEN-STOP' is a 
+                web-app can help you understand and protect the environment,and guide you
+                towards the small steps you can take each day to take more eco-friendly 
+                action and become more aware of your impact on the earth and  own health</h5>
+        
+          </section>
+
+
+          <!--facility-->
+<hr>
+          <div class="wpb_text_column wpb_content_element   featured-for-you">
+            <div class="wpb_wrapper">
+            <h1 class="happy-planet-text" style="font-size: 50px; font-weight: bold; text-align: center;padding-bottom: 5%; padding-top:1% ;"><a style="color: #00af91;" href="">Facilities</a></h1>
+            </div>
+            </div>
+
+<div class="container">
+        
+              <div class="box">
+        <div class="imgBx">
+          <img src="https://us.123rf.com/450wm/topvectors/topvectors1802/topvectors180200001/94594663-stock-vector-two-kids-planting-tree-boys-in-working-overalls-and-caps-one-kid-holding-seedling-in-his-hand-other-.jpg?ver=6">
+        </div>
+        <div class="content">
+          <h3>Plant A Tree</h3>
+          <p>For every 250 green-points, 'Green-Stop' provides you the opportunity to use these points to plant trees in one of the areas of the country in desperate need of vegetation.To use your green-points to plant trees, simply add Plant A Tree to your shopping basket from the Products Section and begin your Planting Journey with us!.</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="https://image.freepik.com/free-vector/passengers-waiting-public-transport-bus-stop_74855-5282.jpg">
+        </div>
+        <div class="content">
+          <h3>Public Transport</h3>
+          <p>Switch to public transport and use more environment friendly options for your daily commute. For 1000 green-points , get a free ride pass from us and travel around the city on the transport of your choice . </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="https://i.pinimg.com/originals/e4/2c/b0/e42cb0da9184cd3baae32b229102bf64.jpg">
+        </div>
+        <div class="content">
+          <h3>Organic Products</h3>
+          <p>By using this facility, 'Do your bit' and be part of a community that engages in the use of green and eco-friendly products. Use your green-points to purchase organic products and get interesting discounts. At the time of redemption, 100 Green Points = 1 Re. For every purchase from your local shops, one can avail of a 10% discount on the total purchase value .</p>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+
+<!--teams-->
+<hr>
+
+    <br>
+<br>
+
+
+
+
+         <!--chatbox-->
+     <section class="chatbx">
+
+        <button class="open-button" onclick="openform()"><b>Chat With Us</b></button>
+        <div class="chat-popup" id=myform>
+            <form action="" class="form-container">
+                <h1>Chat here!</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="GO GREEN" name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeform()">Close</button>
+            </form>
+        </div>
+    </section>
+
+     
+    
+    <script type="text/javascript">
+        function openform(){
+            document.getElementById("myform").style.display="block";
+        }
+        function closeform(){
+            document.getElementById("myform").style.display="none";
+        }
+    </script>
+    <footer class="footer-distributed">
+
+            <div class="footer-left">
+          <img src="{%static 'web/img/footer.png'%}">
+                <h3>About<span>Green Stop</span></h3>
+
+                <p class="footer-links">
+                    <a href="#">Home</a>
+                    |
+                    <a href="#">Blogs and Tweets</a>
+                    |
+                    <a href="#">About</a>
+                    |
+                    <a href="#">Products</a>
+                </p>
+
+                <p class="footer-company-name">THE GREEN STOP</p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                      <p><span>Kashmere Gate,Delhi</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 9998877234</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@greenstop.com">support@greenstop.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About Green Stop</span>
+                   Green stop is the ultimate website to promote and lead to sustainable living.</p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    
+    
+</body>
+</html>   
+{% endblock %}
