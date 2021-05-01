@@ -13,3 +13,17 @@ DATABASE IN SQL
 Django
 Authentication
 Google Cloud Access
+
+# HOW TO RUN THE PROJECT
+Pre-requisites:
+Python 3.7 and Django should be installed.
+
+1. Launch the virtual environment 
+2. Open the terminal
+Run the command: 
+cd django/eshop/ve/bin
+activate
+3. Change the directory to eshop
+Run the command:
+python manage.py runserver
+4. An http link will be generated. Click on it to view the website
