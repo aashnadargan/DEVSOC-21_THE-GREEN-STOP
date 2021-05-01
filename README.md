@@ -20,10 +20,10 @@ Python 3.7 and Django should be installed.
 
 1. Launch the virtual environment 
 2. Open the terminal
-Run the command: 
-cd django/eshop/ve/bin
-3. activate
-4. Change the directory to eshop
-Run the command:
-python manage.py runserver
-5. An http link will be generated. Click on it to view the website
+   2.Run the command: 
+   2.cd django/eshop/ve/bin
+   2.activate
+3. Change the directory to eshop
+   3.Run the command:   
+   3.python manage.py runserver
+4. An http link will be generated. Click on it to view the website
